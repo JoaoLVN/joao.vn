@@ -1,0 +1,95 @@
+{
+  "name": "João Luiz Vieira",
+  "pronouns": "he/him",
+  "locations": "Berlin, Germany",
+  "email": "joao.euu@gmail.com",
+  "links": {
+    "linkedin": "https://linkedin.com/in/joao-lvn",
+    "github": "https://github.com/joaolvn"
+  },
+  "summary": "Senior Software Engineer and Tech Lead with 7+ years of experience specializing in full-cycle game development for web and emerging platforms. Expert in TypeScript, JavaScript, Unity, and cloud architecture, with a proven track record of shipping highly profitable titles, leading technical teams, and pioneering innovative AI-driven game creation tools. Adept at managing live operations and deploying scalable applications.",
+  "work": [
+    {
+      "title": "Senior Game Engineer & Tech Lead",
+      "company": "Playco",
+      "location": "Berlin, Germany (Remote)",
+      "start": "October 2021",
+      "end": "present",
+      "bullets": [
+        "Contributed to the development and live service of 'Thug Life', a highly profitable title on Facebook Instant Games, implementing key gameplay and monetization features to drive revenue.",
+        "Led a prototyping team (1 developer, 1 artist) to explore new game concepts for emerging platforms like Discord and Telegram; responsible for writing product specs, analyzing performance data, and deploying successful prototypes.",
+        "Delivered core features for the pet simulation game 'Buruburu Do-butsu', leading to a promotion to Tech Lead based on strong performance; assumed full ownership of the game's technical roadmap, architecture, and live operations.",
+        "Pioneered the development of an innovative game creator that leverages Large Language Models (LLMs) to transform user text prompts into playable, interactive visual novels.",
+        "Designed and deployed a scalable, serverless backend on AWS for the LLM creator, defining the infrastructure as code using AWS CDK with Lambda, CloudFront, S3, and AuroraDB (PostgreSQL)."
+      ]
+    },
+    {
+      "title": "Senior HTML5 Game Developer",
+      "company": "Softgames",
+      "location": "Berlin, Germany",
+      "start": "April 2019",
+      "end": "October 2021",
+      "bullets": [
+        "Led development and live operations for a portfolio of HTML5 games, including key titles like Solitaire Stories Tripeaks and Mahjong Story, implementing features and optimizations to improve player retention.",
+        "Architected and implemented a unified build pipeline for multi-platform deployment (Android, iOS, Web), significantly reducing compilation time and streamlining the release process.",
+        "Mentored developers on best practices for TypeScript, Redux, and Pixi.js, improving overall team code quality and productivity."
+      ]
+    },
+    {
+      "title": "Unity Game Developer",
+      "company": "Formula XR",
+      "location": "São Jose dos Campos, Brazil",
+      "start": "December 2017",
+      "end": "March 2019",
+      "bullets": [
+        "Developed a high-performance C++ tool to convert CAD models to optimized meshes in real-time, automating a critical step in the asset pipeline for VR applications in Unity.",
+        "Designed and built a custom Unity-like editor that empowered non-technical clients to create and customize their own VR training simulations, reducing dependency on the development team.",
+        "Implemented core multiplayer functionalities for a collaborative VR platform using C# and Unity, focusing on low-latency interactions and state synchronization."
+      ]
+    }
+  ],
+  "skills": {
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "C#",
+      "C++",
+      "Kotlin",
+      "Java",
+      "Swift"
+    ],
+    "engines_frameworks": ["Unity", "Pixi.js", "React", "Node.js"],
+    "technologies_platforms": [
+      "AWS",
+      "AI/LLM Integration",
+      "Live Operations",
+      "Git"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science and Technology",
+      "institution": "Federal University of São Paulo (UNIFESP)",
+      "location": "São Paulo, Brazil",
+      "start": "2015",
+      "end": "2019"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Embodiment of a virtual prosthesis through training using an EMG-based human-machine interface: Case series",
+      "venue": "Frontiers",
+      "year": "2022"
+    },
+    {
+      "title": "Electromyography biofeedback system with visual and vibratory feedbacks designed for lower limb rehabilitation",
+      "venue": "ResearchGate",
+      "year": "2021"
+    },
+    {
+      "title": "Study Of Brightness Adjustment And Enhancement Techniques In Aerial Images Obtained By Drones",
+      "venue": "AEITA",
+      "year": "2017"
+    }
+  ]
+}
