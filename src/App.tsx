@@ -3,6 +3,8 @@ import joao from './assets/photo.jpg';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { CVPDF } from './components/CVPDF';
 import { CVReact } from './components/CVReact';
+import data from './data/cv.json';
+import { IconButton } from './components/IconButton';
 
 export function App() {
   return (
@@ -10,7 +12,7 @@ export function App() {
       <main className="flex flex-col w-full mx-auto px-4 sm:px-6">
         <section
           id="about"
-          className="min-h-dvh flex flex-col justify-center gap-5 snap-start max-w-lg mx-auto"
+          className="relative min-h-dvh flex flex-col justify-center gap-5 snap-start max-w-lg mx-auto"
         >
           <img
             src={joao}
@@ -21,16 +23,41 @@ export function App() {
           <h1 className="text-3xl font-medium sm:text-4xl tracking-tight">
             Hi, I'm João.
           </h1>
-          <h2 className="text-base font-light sm:text-lg">
-            I'm a software developer with a passion for building games. I
-            started coding when I was 15 and I haven't stopped since! I'm
-            originally from Brazil but currently based in Berlin.
+          <h2 className="text-base font-light sm:text-lg text-neutral-700">
+            Senior software engineer and tech lead crafting games and playful
+            web experiences. Based in Berlin, originally from Brazil.
           </h2>
-          <div className="flex gap-2">
-            <Linkedin />
-            <Github />
-            <Mail />
-            <File />
+          <div className="flex gap-3 text-neutral-500">
+            <a
+              href={data.links.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn"
+            >
+              <IconButton label="LinkedIn">
+                <Linkedin className="w-5 h-5 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105" />
+              </IconButton>
+            </a>
+            <a
+              href={data.links.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub"
+            >
+              <IconButton label="GitHub">
+                <Github className="w-5 h-5 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105" />
+              </IconButton>
+            </a>
+            <a href={`mailto:${data.email}`} aria-label="Email">
+              <IconButton label="Email">
+                <Mail className="w-5 h-5 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105" />
+              </IconButton>
+            </a>
+            <a href="#resume" aria-label="Resume">
+              <IconButton label="Resume">
+                <File className="w-5 h-5 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105" />
+              </IconButton>
+            </a>
           </div>
         </section>
         <section
@@ -42,13 +69,15 @@ export function App() {
               Resume
             </h2>
             <PDFDownloadLink document={<CVPDF />} fileName="JoaoVN_CV.pdf">
-              {({ loading }) =>
-                loading ? (
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                ) : (
-                  <Download className="w-4 h-4" />
-                )
-              }
+              {({ loading }) => (
+                <IconButton label="Download PDF">
+                  {loading ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : (
+                    <Download className="w-5 h-5 transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105" />
+                  )}
+                </IconButton>
+              )}
             </PDFDownloadLink>
           </div>
           <div className="w-full">
