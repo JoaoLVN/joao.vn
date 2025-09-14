@@ -64,6 +64,7 @@ export function CVReact() {
   const timelineLeft = '0.45rem';
   return (
     <motion.div
+      viewport={{ once: true }}
       initial="hidden"
       whileInView="show"
       variants={containerVariants}
