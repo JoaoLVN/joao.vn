@@ -9,7 +9,7 @@
     "test:types": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && cd cdk && cdk deploy --require-approval never --outputs-file ../cdk-outputs.json"
+    "deploy": "npm run build && pnpm --filter cdk cdk deploy --require-approval never --outputs-file ../cdk-outputs.json"
   },
   "dependencies": {
     "@react-pdf/renderer": "4.3.0",
