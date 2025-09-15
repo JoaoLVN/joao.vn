@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "test:types": "tsc --noEmit",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && cd cdk && cdk deploy --require-approval never --outputs-file ../cdk-outputs.json"
   },
   "dependencies": {
     "@react-pdf/renderer": "4.3.0",
-    "lucide-react": "^0.544.0",
-    "motion": "^12.23.12",
+    "lucide-react": "0.544.0",
+    "motion": "12.23.12",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
