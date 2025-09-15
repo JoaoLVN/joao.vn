@@ -60,7 +60,7 @@ function TimelineItem({
   );
 }
 
-export function CVReact() {
+export function Resume() {
   const timelineLeft = '0.45rem';
   return (
     <motion.div
@@ -76,7 +76,7 @@ export function CVReact() {
           className="relative space-y-12 list-none pl-0"
         >
           <div
-            className="absolute top-0 bottom-0 w-px bg-neutral-200"
+            className="absolute top-0 w-px h-full bg-gradient-to-b from-neutral-200 via-neutral-200 to-transparent"
             style={{ left: timelineLeft }}
           ></div>
           {data.work.map((w, idx) => (

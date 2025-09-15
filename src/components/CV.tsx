@@ -194,7 +194,7 @@ function displayUrl(rawUrl: string) {
   }
 }
 
-export function CVPDF() {
+export function CV() {
   return (
     <Document>
       <Page size="A4" style={styles.page}>

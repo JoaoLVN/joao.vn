@@ -1,8 +1,8 @@
 import { Linkedin, Github, Mail, File, Download, Loader2 } from 'lucide-react';
 import joao from './assets/photo.jpg';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { CVPDF } from './components/CVPDF';
-import { CVReact } from './components/CVReact';
+import { CV } from './components/CV';
+import { Resume } from './components/Resume';
 import data from './data/cv.json';
 import { IconButton } from './components/IconButton';
 
@@ -62,13 +62,13 @@ export function App() {
         </section>
         <section
           id="resume"
-          className="snap-start min-h-dvh flex flex-col gap-8 max-w-xxl mx-auto py-5"
+          className="snap-start min-h-dvh flex flex-col gap-10 max-w-xxl mx-auto py-5 justify-center"
         >
           <div className="flex items-center justify-between">
             <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">
               Resume
             </h2>
-            <PDFDownloadLink document={<CVPDF />} fileName="JoaoVN_CV.pdf">
+            <PDFDownloadLink document={<CV />} fileName="JoaoVN_CV.pdf">
               {({ loading }) => (
                 <IconButton label="Download PDF">
                   {loading ? (
@@ -80,9 +80,7 @@ export function App() {
               )}
             </PDFDownloadLink>
           </div>
-          <div className="w-full">
-            <CVReact />
-          </div>
+          <Resume />
         </section>
       </main>
     </div>

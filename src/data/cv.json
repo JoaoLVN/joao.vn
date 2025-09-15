@@ -16,11 +16,11 @@
       "start": "October 2021",
       "end": "present",
       "bullets": [
-        "Contributed to the development and live service of 'Thug Life', a highly profitable title on Facebook Instant Games, implementing key gameplay and monetization features to drive revenue.",
+        "Pioneered the development of an innovative game creator that leverages Large Language Models (LLMs) to transform user text prompts into playable, interactive visual novels.",
+        "Designed and deployed a scalable, serverless backend on AWS for the LLM creator, defining the infrastructure as code using AWS CDK with Lambda, CloudFront, S3, and AuroraDB (PostgreSQL).",
         "Led a prototyping team (1 developer, 1 artist) to explore new game concepts for emerging platforms like Discord and Telegram; responsible for writing product specs, analyzing performance data, and deploying successful prototypes.",
         "Delivered core features for the pet simulation game 'Buruburu Do-butsu', leading to a promotion to Tech Lead based on strong performance; assumed full ownership of the game's technical roadmap, architecture, and live operations.",
-        "Pioneered the development of an innovative game creator that leverages Large Language Models (LLMs) to transform user text prompts into playable, interactive visual novels.",
-        "Designed and deployed a scalable, serverless backend on AWS for the LLM creator, defining the infrastructure as code using AWS CDK with Lambda, CloudFront, S3, and AuroraDB (PostgreSQL)."
+        "Contributed to the development and live service of 'Thug Life', a highly profitable title on Facebook Instant Games, implementing key gameplay and monetization features to drive revenue."
       ]
     },
     {
