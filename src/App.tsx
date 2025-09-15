@@ -8,11 +8,11 @@ import { IconButton } from './components/IconButton';
 
 export function App() {
   return (
-    <div className="min-h-dvh bg-white text-neutral-900">
+    <div className="min-h-screen min-h-[100svh] bg-white text-neutral-900">
       <main className="flex flex-col w-full mx-auto px-4 sm:px-6">
         <section
           id="about"
-          className="relative min-h-dvh flex flex-col justify-center gap-5 max-w-lg mx-auto"
+          className="relative min-h-screen min-h-[100svh] flex flex-col justify-center gap-5 max-w-lg mx-auto"
         >
           <img
             src={joao}
@@ -62,7 +62,7 @@ export function App() {
         </section>
         <section
           id="resume"
-          className="min-h-dvh flex flex-col gap-10 max-w-xxl mx-auto py-5 justify-center"
+          className="min-h-screen min-h-[100svh] flex flex-col gap-10 max-w-xxl mx-auto py-5 justify-center"
         >
           <div className="flex items-center justify-between">
             <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">
